@@ -1,0 +1,13 @@
+services:
+  web:
+    image: node:25-alpine3.21
+    container_name: own-web-front
+    ports:
+      - 5173:5173
+    working_dir: /home/node/app
+    volumes:
+      - ./diegoweb/:/home/node/app
+    command: >
+      sh -c "npm run dev -- --host"
+    environment:
+      - CHOKIDAR_USEPOLLING=true=value
