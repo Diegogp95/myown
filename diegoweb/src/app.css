@@ -5,4 +5,71 @@
 @theme {
 	--color-mint-500: oklch(0.72 0.11 178);
 	--font-script: Great Vibes, cursive;
+
+	--color-primaryBg: #323232;
+	--color-secondaryBg: #151515;
+
+	--color-livid-brown-50: #f9f6f8;
+	--color-livid-brown-100: #f4eff2;
+	--color-livid-brown-200: #ebdfe6;
+	--color-livid-brown-300: #dcc5d2;
+	--color-livid-brown-400: #c5a1b5;
+	--color-livid-brown-500: #b1839b;
+	--color-livid-brown-600: #9a6880;
+	--color-livid-brown-700: #825468;
+	--color-livid-brown-800: #6d4757;
+	--color-livid-brown-900: #5c3f4c;
+	--color-livid-brown-950: #4a2e3a;
+
+	--color-elephant-50: #f4f8fb;
+	--color-elephant-100: #e8eff6;
+	--color-elephant-200: #cbe0ec;
+	--color-elephant-300: #9dc6dc;
+	--color-elephant-400: #69a7c7;
+	--color-elephant-500: #468cb1;
+	--color-elephant-600: #347195;
+	--color-elephant-700: #2b5a79;
+	--color-elephant-800: #274d65;
+	--color-elephant-900: #254155;
+	--color-elephant-950: #1e3445;
+
+	--color-teal-blue-50: #edfcfe;
+	--color-teal-blue-100: #d2f6fb;
+	--color-teal-blue-200: #abecf6;
+	--color-teal-blue-300: #70dbf0;
+	--color-teal-blue-400: #2fc1e1;
+	--color-teal-blue-500: #13a5c7;
+	--color-teal-blue-600: #1383a7;
+	--color-teal-blue-700: #166a88;
+	--color-teal-blue-800: #1b576f;
+	--color-teal-blue-900: #184154;
+	--color-teal-blue-950: #0c2f40;
+
+	--color-zorba-50: #f8f8f8;
+	--color-zorba-100: #f1f0ef;
+	--color-zorba-200: #e6e3e2;
+	--color-zorba-300: #d4d0cd;
+	--color-zorba-400: #bab3af;
+	--color-zorba-500: #a29994;
+	--color-zorba-600: #897f79;
+	--color-zorba-700: #716964;
+	--color-zorba-800: #5f5955;
+	--color-zorba-900: #524d4a;
+	--color-zorba-950: #2a2725;
+
+	--color-loblolly-50: #f7f8f8;
+	--color-loblolly-100: #edeff1;
+	--color-loblolly-200: #d7dde0;
+	--color-loblolly-300: #bdc7cb;
+	--color-loblolly-400: #8c9ea4;
+	--color-loblolly-500: #6e8289;
+	--color-loblolly-600: #586971;
+	--color-loblolly-700: #48565c;
+	--color-loblolly-800: #3e494e;
+	--color-loblolly-900: #373f43;
+	--color-loblolly-950: #24292d;
+
+	--shadow-underline-lg: -10px 10px 0px 0px;
+	--shadow-underline-md: -6px 6px 0px 0px;
+
 }

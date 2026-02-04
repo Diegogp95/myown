@@ -1,9 +1,21 @@
 <script lang="ts">
+	import SectionHeader from "$lib/SectionHeader.svelte";
+	import SubSectionHeader from "$lib/SubSectionHeader.svelte";
+	import LoremBubble from "$lib/LoremBubble.svelte";
+	import UnderConstruction from "$lib/UnderConstruction.svelte";
 
-	let { data } = $$props;
+	let { data } = $props();
 
 
 </script>
 
-<h1>{data.t['home']['title']}</h1>
-<p>{data.t['home']['description']}</p>
+<SectionHeader title={data.t['home']['title']} />
+<UnderConstruction lang={data.lang} />
+<SubSectionHeader title={data.t['home']['description']} />
+<UnderConstruction lang={data.lang} />
+<LoremBubble />
+<LoremBubble />
+<LoremBubble />
+<LoremBubble />
+<LoremBubble />
+<LoremBubble />
