@@ -9,7 +9,7 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: 'index.html',	// As i plan to host in S3
+			fallback: '404.html',	// As i plan to host in S3
 		})
 	}
 };

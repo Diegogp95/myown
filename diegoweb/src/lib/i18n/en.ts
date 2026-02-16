@@ -4,11 +4,16 @@ export default {
 		about: "About",
 		projects: "Projects",
 		blog: "Blog",
-		contact: "Contact"
+		contact: "Contact",
+		language: "Language:"
 	},
 	home: {
-		title: "Welcome to Diego's Website",
-		description: "This is the personal website of Diego Gallegos."
+		title1st: "Hello!",
+		title2nd: "I am Diego Gallegos",
+		subtitle: "Welcome to my website",
+		description: "BSc in Electronics Engineering. Passionate about web development and technology. I am always looking to learn something new, improve my skills, and take on new challenges.",
+		cvButton: "Download CV",
+		cv: "/Diego-Gallegos-cv-1.2-en.pdf"
 	},
 	error: {
 		404: {
@@ -21,5 +26,8 @@ export default {
 		title: "Under Construction",
 		message: "This section is under construction. Check back soon for content.",
 		icon: "🚧"
+	},
+	footer: {
+		rights: "MIT License."
 	}
 }

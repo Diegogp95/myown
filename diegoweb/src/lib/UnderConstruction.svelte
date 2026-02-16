@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { languages, type Lang } from '$lib/i18n';
+
 	let { lang }: { lang: Lang } = $props();
 	const t = languages[lang] || languages.en;
 

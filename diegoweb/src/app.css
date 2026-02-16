@@ -69,7 +69,21 @@
 	--color-loblolly-900: #373f43;
 	--color-loblolly-950: #24292d;
 
+	--color-terminal-bg: #300a24;
+	--color-terminal-header-from: #4e4e4e;
+	--color-terminal-header-to: #2c2c2c;
+	--color-terminal-close-from: #ff7566;
+	--color-terminal-close-to: #f15d22;
+	--color-terminal-button-from: #a8a8a8;
+	--color-terminal-button-to: #5a5a5a;
+
 	--shadow-underline-lg: -10px 10px 0px 0px;
 	--shadow-underline-md: -6px 6px 0px 0px;
+
+	@keyframes blink {
+		0%, 100% { opacity: 1; }
+		50% { opacity: 0; }
+	};
+	--animate-blink: blink 1.5s step-start infinite;
 
 }

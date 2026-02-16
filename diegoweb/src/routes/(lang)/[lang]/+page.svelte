@@ -1,21 +1,32 @@
 <script lang="ts">
-	import SectionHeader from "$lib/SectionHeader.svelte";
-	import SubSectionHeader from "$lib/SubSectionHeader.svelte";
-	import LoremBubble from "$lib/LoremBubble.svelte";
-	import UnderConstruction from "$lib/UnderConstruction.svelte";
+	import Terminal from "$lib/Terminal.svelte";
+	import Button from "$lib/Button.svelte";
 
 	let { data } = $props();
 
 
 </script>
 
-<SectionHeader title={data.t['home']['title']} />
-<UnderConstruction lang={data.lang} />
-<SubSectionHeader title={data.t['home']['description']} />
-<UnderConstruction lang={data.lang} />
-<LoremBubble />
-<LoremBubble />
-<LoremBubble />
-<LoremBubble />
-<LoremBubble />
-<LoremBubble />
+<div class="max-w-5xl mx-auto flex flex-col items-center gap-16">
+
+	<div class="flex flex-col md:flex-row items-center gap-8 mt-4">
+		<div class="flex flex-col items-center md:items-start gap-4">
+			<div class="flex items-baseline gap-2">
+				<h1 class="text-2xl text-white/70">{data.t['home']['title1st']}</h1>
+				<h1 class="text-4xl font-bold text-white">{data.t['home']['title2nd']}</h1>
+			</div>
+			<p class="text-lg text-white/60">{data.t['home']['subtitle']}</p>
+		</div>
+	</div>
+
+	<Terminal line={data.t['home']['description']} />
+
+	<Button
+		href={data.t['home']['cv']}
+		text={data.t['home']['cvButton']}
+		icon="download"
+		variant="primary"
+		target="_blank"
+	/>
+
+</div>
