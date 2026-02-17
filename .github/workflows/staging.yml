@@ -68,7 +68,5 @@ jobs:
       - name: Deploy to S3 (staging)
         run: aws s3 sync build/ s3://${{ secrets.STAGING_BUCKET_NAME }} --delete
 
-      - name: Invalidate CloudFront (staging)
-        run: aws cloudfront create-invalidation \
-          --distribution-id ${{ secrets.STAGING_DISTRIBUTION_ID }} \
-          --paths "/*"
+      - name: Invalidate CloudFront
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.STAGING_CF_DISTRIBUTION_ID }} --paths "/*"
