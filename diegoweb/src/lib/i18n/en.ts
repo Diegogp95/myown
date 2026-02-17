@@ -13,7 +13,7 @@ export default {
 		subtitle: "Welcome to my website",
 		description: "BSc in Electronics Engineering. Passionate about web development and technology. I am always looking to learn something new, improve my skills, and take on new challenges.",
 		cvButton: "Download CV",
-		cv: "/Diego-Gallegos-cv-1.2-en.pdf"
+		cv: "/Diego-Gallegos-cv-1.3-en.pdf"
 	},
 	error: {
 		404: {

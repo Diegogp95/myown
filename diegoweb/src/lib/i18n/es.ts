@@ -13,7 +13,7 @@ export default {
 		subtitle: "Bienvenido a mi sitio web",
 		description: "Ingeniero Civil Electrónico. Apasionado por el desarrollo web y la tecnología. Siempre estoy buscando aprender algo nuevo, mejorar mis habilidades y asumir nuevos desafíos.",
 		cvButton: "Descargar CV",
-		cv: "/Diego-Gallegos-cv-1.2-es.pdf"
+		cv: "/Diego-Gallegos-cv-1.3-es.pdf"
 	},
 	error: {
 		404: {

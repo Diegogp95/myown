@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { languages, type Lang } from '$lib/i18n';
 	import { page } from '$app/state';
-	import { goto } from '$app/navigation';
 
 	let { lang }: { lang: Lang } = $props();
 	const t = languages[lang] || languages.en;
@@ -22,7 +21,7 @@
 		isOpen = false;
 		const currentPath = page.url.pathname;
 		const pathWithoutLang = currentPath.replace(/^\/(en|es)/, '');
-		goto(`/${newLang}${pathWithoutLang || '/'}`);
+		window.location.href = `/${newLang}${pathWithoutLang || '/'}` ;
 	}
 
 	function toggleMobileMenu() {
@@ -73,11 +72,11 @@
 
 		<!-- Desktop Navigation - Hidden on mobile -->
 		<ul class="hidden md:flex flex-row justify-end items-center [&>li]:hover:text-white">
-			<li class="px-4"><a href="/{lang}/" data-sveltekit-preload-data>{t.nav.home}</a></li>
-			<li class="px-4"><a href="/{lang}/about/" data-sveltekit-preload-data>{t.nav.about}</a></li>
-			<li class="px-4"><a href="/{lang}/projects/" data-sveltekit-preload-data>{t.nav.projects}</a></li>
-			<li class="px-4"><a href="/{lang}/blog/" data-sveltekit-preload-data>{t.nav.blog}</a></li>
-			<li class="px-4"><a href="/{lang}/contact/" data-sveltekit-preload-data>{t.nav.contact}</a></li>
+			<li class="px-4"><a href="/{lang}/">{t.nav.home}</a></li>
+			<li class="px-4"><a href="/{lang}/about/">{t.nav.about}</a></li>
+			<li class="px-4"><a href="/{lang}/projects/">{t.nav.projects}</a></li>
+			<li class="px-4"><a href="/{lang}/blog/">{t.nav.blog}</a></li>
+			<li class="px-4"><a href="/{lang}/contact/">{t.nav.contact}</a></li>
 
 			<!-- Language Dropdown - Desktop -->
 			<li class="px-4 relative language-dropdown">
@@ -116,11 +115,11 @@
 		<!-- Mobile Dropdown Menu -->
 		{#if isMobileMenuOpen}
 			<div class="md:hidden mt-2 py-2 bg-primaryBg border border-loblolly-700 rounded shadow-xl">
-				<a href="/{lang}/" data-sveltekit-preload-data onclick={closeMobileMenu} class="block px-4 py-2 hover:bg-secondaryBg hover:text-white transition-colors">{t.nav.home}</a>
-				<a href="/{lang}/about/" data-sveltekit-preload-data onclick={closeMobileMenu} class="block px-4 py-2 hover:bg-secondaryBg hover:text-white transition-colors">{t.nav.about}</a>
-				<a href="/{lang}/projects/" data-sveltekit-preload-data onclick={closeMobileMenu} class="block px-4 py-2 hover:bg-secondaryBg hover:text-white transition-colors">{t.nav.projects}</a>
-				<a href="/{lang}/blog/" data-sveltekit-preload-data onclick={closeMobileMenu} class="block px-4 py-2 hover:bg-secondaryBg hover:text-white transition-colors">{t.nav.blog}</a>
-				<a href="/{lang}/contact/" data-sveltekit-preload-data onclick={closeMobileMenu} class="block px-4 py-2 hover:bg-secondaryBg hover:text-white transition-colors">{t.nav.contact}</a>
+				<a href="/{lang}/" onclick={closeMobileMenu} class="block px-4 py-2 hover:bg-secondaryBg hover:text-white transition-colors">{t.nav.home}</a>
+				<a href="/{lang}/about/" onclick={closeMobileMenu} class="block px-4 py-2 hover:bg-secondaryBg hover:text-white transition-colors">{t.nav.about}</a>
+				<a href="/{lang}/projects/" onclick={closeMobileMenu} class="block px-4 py-2 hover:bg-secondaryBg hover:text-white transition-colors">{t.nav.projects}</a>
+				<a href="/{lang}/blog/" onclick={closeMobileMenu} class="block px-4 py-2 hover:bg-secondaryBg hover:text-white transition-colors">{t.nav.blog}</a>
+				<a href="/{lang}/contact/" onclick={closeMobileMenu} class="block px-4 py-2 hover:bg-secondaryBg hover:text-white transition-colors">{t.nav.contact}</a>
 
 				<!-- Language selector in mobile menu -->
 				<div class="px-4 py-2 border-t border-loblolly-700 mt-2 pt-3">
