@@ -9,11 +9,11 @@ export default {
 	},
 	home: {
 		title1st: "Hello!",
-		title2nd: "I am Diego Gallegos",
+		title2nd: "I am Diego",
 		subtitle: "Welcome to my website",
 		description: "BSc in Electronics Engineering. Passionate about web development and technology. I am always looking to learn something new, improve my skills, and take on new challenges.",
 		cvButton: "Download CV",
-		cv: "/Diego-Gallegos-cv-1.3-en.pdf"
+		cv: "/Diego-Gallegos-cv-1.4-en.pdf"
 	},
 	error: {
 		404: {
@@ -29,5 +29,31 @@ export default {
 	},
 	footer: {
 		rights: "MIT License."
+	},
+	contact: {
+		title: "Contact",
+		subtitle: "Let's connect! Feel free to reach out.",
+		socialSection: "Connect With Me",
+		infoSection: "Contact Information",
+		github: {
+			label: "GitHub",
+			username: "diegogp95",
+			description: "Check out my repositories and projects"
+		},
+		linkedin: {
+			label: "LinkedIn",
+			username: "diegogp95",
+			description: "Let's connect professionally"
+		},
+		email: {
+			label: "Email",
+			address: "diego.gp95@hotmail.com",
+			description: "Send me a message"
+		},
+		location: {
+			label: "Location",
+			city: "Santiago, Chile",
+			description: "Currently based in Santiago"
+		}
 	}
 }

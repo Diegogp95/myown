@@ -18,9 +18,9 @@
 	}: Props = $props();
 
 	const variantClasses = {
-		primary: 'bg-elephant-600 hover:bg-elephant-500',
-		secondary: 'bg-teal-blue-600 hover:bg-teal-blue-500',
-		accent: 'bg-livid-brown-600 hover:bg-livid-brown-500'
+		primary: 'bg-tech-blue-600 hover:bg-tech-blue-500',
+		secondary: 'bg-cyber-cyan-600 hover:bg-cyber-cyan-500',
+		accent: 'bg-electric-purple-600 hover:bg-electric-purple-500'
 	};
 
 	const iconPaths = {

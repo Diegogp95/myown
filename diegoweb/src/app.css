@@ -9,41 +9,57 @@
 	--color-primaryBg: #323232;
 	--color-secondaryBg: #151515;
 
-	--color-livid-brown-50: #f9f6f8;
-	--color-livid-brown-100: #f4eff2;
-	--color-livid-brown-200: #ebdfe6;
-	--color-livid-brown-300: #dcc5d2;
-	--color-livid-brown-400: #c5a1b5;
-	--color-livid-brown-500: #b1839b;
-	--color-livid-brown-600: #9a6880;
-	--color-livid-brown-700: #825468;
-	--color-livid-brown-800: #6d4757;
-	--color-livid-brown-900: #5c3f4c;
-	--color-livid-brown-950: #4a2e3a;
+	/* Tech Blue - Primary (GitHub/VS Code inspired) */
+	--color-tech-blue-50: #f0f9ff;
+	--color-tech-blue-100: #e0f2fe;
+	--color-tech-blue-200: #bae6fd;
+	--color-tech-blue-300: #7dd3fc;
+	--color-tech-blue-400: #38bdf8;
+	--color-tech-blue-500: #0ea5e9;
+	--color-tech-blue-600: #0284c7;
+	--color-tech-blue-700: #0369a1;
+	--color-tech-blue-800: #075985;
+	--color-tech-blue-900: #0c4a6e;
+	--color-tech-blue-950: #082f49;
 
-	--color-elephant-50: #f4f8fb;
-	--color-elephant-100: #e8eff6;
-	--color-elephant-200: #cbe0ec;
-	--color-elephant-300: #9dc6dc;
-	--color-elephant-400: #69a7c7;
-	--color-elephant-500: #468cb1;
-	--color-elephant-600: #347195;
-	--color-elephant-700: #2b5a79;
-	--color-elephant-800: #274d65;
-	--color-elephant-900: #254155;
-	--color-elephant-950: #1e3445;
+	/* Electric Purple - Accent (VS Code inspired) */
+	--color-electric-purple-50: #faf5ff;
+	--color-electric-purple-100: #f3e8ff;
+	--color-electric-purple-200: #e9d5ff;
+	--color-electric-purple-300: #d8b4fe;
+	--color-electric-purple-400: #c084fc;
+	--color-electric-purple-500: #a855f7;
+	--color-electric-purple-600: #9333ea;
+	--color-electric-purple-700: #7e22ce;
+	--color-electric-purple-800: #6b21a8;
+	--color-electric-purple-900: #581c87;
+	--color-electric-purple-950: #3b0764;
 
-	--color-teal-blue-50: #edfcfe;
-	--color-teal-blue-100: #d2f6fb;
-	--color-teal-blue-200: #abecf6;
-	--color-teal-blue-300: #70dbf0;
-	--color-teal-blue-400: #2fc1e1;
-	--color-teal-blue-500: #13a5c7;
-	--color-teal-blue-600: #1383a7;
-	--color-teal-blue-700: #166a88;
-	--color-teal-blue-800: #1b576f;
-	--color-teal-blue-900: #184154;
-	--color-teal-blue-950: #0c2f40;
+	/* Cyber Cyan - Secondary (Terminal inspired) */
+	--color-cyber-cyan-50: #ecfeff;
+	--color-cyber-cyan-100: #cffafe;
+	--color-cyber-cyan-200: #a5f3fc;
+	--color-cyber-cyan-300: #67e8f9;
+	--color-cyber-cyan-400: #22d3ee;
+	--color-cyber-cyan-500: #06b6d4;
+	--color-cyber-cyan-600: #0891b2;
+	--color-cyber-cyan-700: #0e7490;
+	--color-cyber-cyan-800: #155e75;
+	--color-cyber-cyan-900: #164e63;
+	--color-cyber-cyan-950: #083344;
+
+	/* Emerald Green - Success/Positive (Matrix inspired) */
+	--color-emerald-50: #ecfdf5;
+	--color-emerald-100: #d1fae5;
+	--color-emerald-200: #a7f3d0;
+	--color-emerald-300: #6ee7b7;
+	--color-emerald-400: #34d399;
+	--color-emerald-500: #10b981;
+	--color-emerald-600: #059669;
+	--color-emerald-700: #047857;
+	--color-emerald-800: #065f46;
+	--color-emerald-900: #064e3b;
+	--color-emerald-950: #022c22;
 
 	--color-zorba-50: #f8f8f8;
 	--color-zorba-100: #f1f0ef;
@@ -85,5 +101,21 @@
 		50% { opacity: 0; }
 	};
 	--animate-blink: blink 1.5s step-start infinite;
+
+	@keyframes shine {
+		0% { left: -33.33%; }
+		100% { left: 100%; }
+	};
+	--animate-shine: shine 2.5s ease-in-out infinite;
+
+	/* Glow shadows for tech colors */
+	--shadow-tech-blue-glow: 0 0 20px rgba(14, 165, 233, 0.3);
+	--shadow-tech-blue-glow-hover: 0 0 20px rgba(14, 165, 233, 0.6);
+	--shadow-cyber-cyan-glow: 0 0 20px rgba(34, 211, 238, 0.3);
+	--shadow-cyber-cyan-glow-hover: 0 0 20px rgba(34, 211, 238, 0.6);
+	--shadow-electric-purple-glow: 0 0 20px rgba(168, 85, 247, 0.3);
+	--shadow-electric-purple-glow-hover: 0 0 20px rgba(168, 85, 247, 0.6);
+	--shadow-emerald-glow: 0 0 20px rgba(52, 211, 153, 0.3);
+	--shadow-emerald-glow-hover: 0 0 20px rgba(52, 211, 153, 0.6);
 
 }
