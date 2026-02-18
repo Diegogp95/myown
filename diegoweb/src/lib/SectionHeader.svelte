@@ -2,7 +2,7 @@
 	let { title }: { title: string } = $props();
 </script>
 
-<div class="mb-12 inline-block">
+<div class="mb-12 inline-block w-full">
 	<h1 class="text-3xl md:text-4xl font-bold text-white mb-3">
 		{title}
 	</h1>
