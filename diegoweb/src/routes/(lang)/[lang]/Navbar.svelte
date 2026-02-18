@@ -56,7 +56,7 @@
 		<div class="md:hidden flex justify-end">
 			<button
 				onclick={toggleMobileMenu}
-				class="p-2 hover:text-white transition-colors"
+				class="p-2 hover:text-white transition-colors cursor-pointer"
 				aria-label="Toggle menu"
 				aria-expanded={isMobileMenuOpen}
 			>
@@ -97,12 +97,12 @@
 				</button>
 
 				{#if isOpen}
-					<div class="absolute right-0 mt-2 py-1 w-12 bg-primaryBg border border-loblolly-700 rounded shadow-xl text-sm">
+					<div class="absolute right-0 mt-2 py w-12 bg-black/40 backdrop-blur-md border border-tech-blue-500/30 rounded shadow-tech-blue-glow text-sm">
 						{#each Object.entries(languageNames) as [key, name]}
 							<button
 								onclick={() => switchLanguage(key as Lang)}
 								disabled={key === lang}
-								class="block w-full px-2 py-1 text-left transition-colors {key === lang ? 'font-bold text-white opacity-50 cursor-default' : 'hover:bg-secondaryBg cursor-pointer'}"
+								class="block w-full px-2 py-2 text-left transition-colors {key === lang ? 'font-bold text-white opacity-50 cursor-default' : 'hover:bg-tech-blue-500/20 cursor-pointer'}"
 							>
 								{name}
 							</button>
@@ -114,15 +114,15 @@
 
 		<!-- Mobile Dropdown Menu -->
 		{#if isMobileMenuOpen}
-			<div class="md:hidden mt-2 py-2 bg-primaryBg border border-loblolly-700 rounded shadow-xl">
-				<a href="/{lang}/" onclick={closeMobileMenu} class="block px-4 py-2 hover:bg-secondaryBg hover:text-white transition-colors">{t.nav.home}</a>
-				<a href="/{lang}/about/" onclick={closeMobileMenu} class="block px-4 py-2 hover:bg-secondaryBg hover:text-white transition-colors">{t.nav.about}</a>
-				<a href="/{lang}/projects/" onclick={closeMobileMenu} class="block px-4 py-2 hover:bg-secondaryBg hover:text-white transition-colors">{t.nav.projects}</a>
-				<a href="/{lang}/blog/" onclick={closeMobileMenu} class="block px-4 py-2 hover:bg-secondaryBg hover:text-white transition-colors">{t.nav.blog}</a>
-				<a href="/{lang}/contact/" onclick={closeMobileMenu} class="block px-4 py-2 hover:bg-secondaryBg hover:text-white transition-colors">{t.nav.contact}</a>
+			<div class="md:hidden mt-2 bg-black/40 backdrop-blur-md border border-cyber-cyan-500/30 rounded shadow-cyber-cyan-glow">
+				<a href="/{lang}/" onclick={closeMobileMenu} class="block px-4 pt-4 pb-2 hover:bg-cyber-cyan-500/20 hover:text-white transition-colors">{t.nav.home}</a>
+				<a href="/{lang}/about/" onclick={closeMobileMenu} class="block px-4 py-2 hover:bg-cyber-cyan-500/20 hover:text-white transition-colors">{t.nav.about}</a>
+				<a href="/{lang}/projects/" onclick={closeMobileMenu} class="block px-4 py-2 hover:bg-cyber-cyan-500/20 hover:text-white transition-colors">{t.nav.projects}</a>
+				<a href="/{lang}/blog/" onclick={closeMobileMenu} class="block px-4 py-2 hover:bg-cyber-cyan-500/20 hover:text-white transition-colors">{t.nav.blog}</a>
+				<a href="/{lang}/contact/" onclick={closeMobileMenu} class="block px-4 pt-2 pb-4 hover:bg-cyber-cyan-500/20 hover:text-white transition-colors">{t.nav.contact}</a>
 
 				<!-- Language selector in mobile menu -->
-				<div class="px-4 py-2 border-t border-loblolly-700 mt-2 pt-3">
+				<div class="px-4 py-2 border-t border-cyber-cyan-500/30 pt-3">
 					<div class="text-xs text-white/50 mb-2">
 						{t.nav.language}
 					</div>
@@ -131,7 +131,7 @@
 							<button
 								onclick={() => { switchLanguage(key as Lang); closeMobileMenu(); }}
 								disabled={key === lang}
-								class="px-3 py-1 rounded transition-colors {key === lang ? 'bg-secondaryBg text-white font-bold' : 'bg-primaryBg hover:bg-secondaryBg'}"
+								class="px-3 py-1 rounded transition-colors {key === lang ? 'bg-cyber-cyan-600 text-white font-bold cursor-default' : 'bg-black/40 hover:bg-cyber-cyan-500/20 cursor-pointer'}"
 							>
 								{name}
 							</button>

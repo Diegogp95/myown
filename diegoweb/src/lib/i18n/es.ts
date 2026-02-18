@@ -9,11 +9,11 @@ export default {
 	},
 	home: {
 		title1st: "¡Hola!",
-		title2nd: "Mi nombre es Diego Gallegos",
+		title2nd: "Me llamo Diego",
 		subtitle: "Bienvenido a mi sitio web",
 		description: "Ingeniero Civil Electrónico. Apasionado por el desarrollo web y la tecnología. Siempre estoy buscando aprender algo nuevo, mejorar mis habilidades y asumir nuevos desafíos.",
 		cvButton: "Descargar CV",
-		cv: "/Diego-Gallegos-cv-1.3-es.pdf"
+		cv: "/Diego-Gallegos-cv-1.4-es.pdf"
 	},
 	error: {
 		404: {
@@ -29,5 +29,31 @@ export default {
 	},
 	footer: {
 		rights: "MIT License."
+	},
+	contact: {
+		title: "Contacto",
+		subtitle: "¡Conectemos! No dudes en comunicarte.",
+		socialSection: "Conecta Conmigo",
+		infoSection: "Información de Contacto",
+		github: {
+			label: "GitHub",
+			username: "diegogp95",
+			description: "Revisa mis repositorios y proyectos"
+		},
+		linkedin: {
+			label: "LinkedIn",
+			username: "diegogp95",
+			description: "Conectemos profesionalmente"
+		},
+		email: {
+			label: "Correo",
+			address: "diego.gp95@hotmail.com",
+			description: "Envíame un mensaje"
+		},
+		location: {
+			label: "Ubicación",
+			city: "Santiago, Chile",
+			description: "Actualmente en Santiago"
+		}
 	}
 }

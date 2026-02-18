@@ -1,11 +1,12 @@
 <script lang="ts">
-
 	let { title }: { title: string } = $props();
-
 </script>
-<div class="w-full pb-4 pl-4 shadow-teal-blue-800 shadow-underline-lg
-	mb-10">
-	<div class="w-full p-4 pt-1 pr-16 shadow-livid-brown-800 shadow-underline-lg">
-		<h1 class="text-4xl font-bold">{title}</h1>
+
+<div class="mb-12 inline-block">
+	<h1 class="text-3xl md:text-4xl font-bold text-white mb-3">
+		{title}
+	</h1>
+	<div class="relative h-0.5 w-full overflow-hidden">
+		<div class="absolute h-full w-1/3 bg-linear-to-r from-transparent via-cyber-cyan-400 to-transparent animate-shine"></div>
 	</div>
 </div>
