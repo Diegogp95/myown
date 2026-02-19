@@ -1,3 +1,5 @@
+import portfolioEn from './projects/portfolio-en';
+
 export default {
 	nav: {
 		home: "Home",
@@ -148,6 +150,18 @@ export default {
 					title: "Concepts & Architecture"
 				}
 			}
+		}
+	},
+	projects: {
+		title: "Projects",
+		detailsButton: "View details",
+		hero: {
+			technologiesLabel: "Technologies",
+			statusCompleted: "Completed",
+			statusInProgress: "In progress"
+		},
+		entries: {
+			portfolio: portfolioEn,
 		}
 	}
 }

@@ -1,3 +1,5 @@
+import portfolioEs from './projects/portfolio-es';
+
 export default {
 	nav: {
 		home: "Inicio",
@@ -148,6 +150,18 @@ earlyLife: {
 					title: "Conceptos & Arquitectura"
 				}
 			}
+		}
+	},
+	projects: {
+		title: "Proyectos",
+		detailsButton: "Ver detalles",
+		hero: {
+			technologiesLabel: "Tecnologías",
+			statusCompleted: "Completado",
+			statusInProgress: "En desarrollo"
+		},
+		entries: {
+			portfolio: portfolioEs,
 		}
 	}
 }
