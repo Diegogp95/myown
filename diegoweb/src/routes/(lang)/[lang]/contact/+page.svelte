@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SectionHeader from "$lib/SectionHeader.svelte";
+	import SubSectionHeader from "$lib/SubSectionHeader.svelte";
 	import ContactCard from "$lib/ContactCard.svelte";
 	import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 	import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
@@ -20,7 +20,7 @@
 
 	<!-- Section: Connect with Me -->
 	<div class="mb-16">
-		<SectionHeader title={data.t.contact.socialSection} />
+		<SubSectionHeader title={data.t.contact.socialSection} />
 
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
 			<ContactCard
@@ -49,7 +49,7 @@
 
 	<!-- Section: Contact Information -->
 	<div class="mb-16">
-		<SectionHeader title={data.t.contact.infoSection} />
+		<SubSectionHeader title={data.t.contact.infoSection} />
 
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
 			<ContactCard
