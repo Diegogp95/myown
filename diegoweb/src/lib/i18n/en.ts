@@ -9,14 +9,37 @@ export default {
 		contact: "Contact",
 		language: "Language:"
 	},
-	home: {
-		title1st: "Hello!",
-		title2nd: "I am Diego",
-		subtitle: "Welcome to my website",
-		description: "BSc in Electronics Engineering. Passionate about web development and technology. I am always looking to learn something new, improve my skills, and take on new challenges.",
-		cvButton: "Download CV",
-		cv: "/Diego-Gallegos-cv-1.4-en.pdf"
-	},
+    home: {
+        title1st: 'Hi! I am',
+        title2nd: 'Diego Gallegos',
+        subtitle: 'Engineer and web developer',
+        description: 'Always looking to learn something new,\nimprove my skills and take on new challenges\nin the world of software development.',
+        cvButton: 'Download CV',
+        cvSubtext: 'See my full experience',
+        cv: '/Diego-Gallegos-cv-1.4-en.pdf',
+        skillsTitle: 'Main Skills',
+        skills: {
+			technologies: [
+	            { name: 'Python' , level: 'advanced' as const },
+	            { name: 'JavaScript / TypeScript' , level: 'advanced' as const },
+	            { name: 'Svelte' , level: 'advanced' as const },
+	            { name: 'Django' , level: 'advanced' as const },
+	            { name: 'Docker' , level: 'advanced' as const },
+	            { name: 'Linux' , level: 'advanced' as const },
+	            { name: 'Bash' , level: 'advanced' as const },
+	            { name: 'Git' , level: 'advanced' as const },
+			],
+			fields: [
+	            { name: 'Backend Development' , variant: 'primary' as const },
+	            { name: 'Full Stack' , variant: 'primary' as const },
+	            { name: 'DevOps' , variant: 'primary' as const },
+	            { name: 'CI/CD' , variant: 'primary' as const },
+	            { name: 'System Administration' , variant: 'secondary' as const }
+			]
+        },
+        aboutButton: 'More about me',
+        contactButton: 'Get in touch',
+    },
 	error: {
 		404: {
 			title: "Page not found",

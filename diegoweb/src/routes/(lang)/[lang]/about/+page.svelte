@@ -83,8 +83,11 @@
 		</p>
 	</div>
 
+</div>
+
+<div class="container mx-auto md:px-4 py-8">
 	<!-- Timeline Container -->
-	<div class="ml-4 md:ml-12">
+	<div class="ml-0 md:ml-12">
 
 		<!-- Early Life -->
 		<TimelineItem title={t.earlyLife.title} period={t.earlyLife.period} color="cyan">

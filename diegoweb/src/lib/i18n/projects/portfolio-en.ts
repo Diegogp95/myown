@@ -19,9 +19,10 @@ export default {
 		motivation: {
 			title: "Why This Project?",
 			paragraphs: [
-				"After completing my degree in Electronic Engineering and gaining experience as a Full Stack developer, I needed something solid to showcase my work professionally. Beyond just displaying projects, I wanted to demonstrate that I can learn and apply modern technologies in an organized and rational way.",
-				"While this isn't a large-scale or high-impact project, I deliberately went beyond a simple static site. I implemented a complete AWS infrastructure with S3, CloudFront, and Route 53, set up CI/CD pipelines with GitHub Actions, and configured dual environments (staging and production) with separate infrastructure. These are technologies I'm actively learning and, although I don't have extensive professional experience with them yet, I wanted to prove I can apply them effectively.",
-				"This project reflects my approach to learning: hands-on, practical, and always pushing myself to go one step further than the minimum required."
+				"After completing my degree in Electronic Engineering and working as a Full Stack developer, I wanted a portfolio that did more than showcase projects. I wanted it to reflect how I think about software: structured, intentional, and production-oriented.",
+				"Although the site itself is static, I deliberately designed it with a production-grade cloud architecture. Instead of relying on plug-and-play hosting, I implemented a full AWS setup using Amazon S3, Amazon CloudFront, and Amazon Route 53, alongside automated CI/CD pipelines powered by GitHub Actions. I also configured fully isolated staging and production environments.",
+				"My goal was not complexity for its own sake, but to demonstrate practical understanding of infrastructure, deployment workflows, caching strategies, and environment separation.",
+				"The project also reflects how I approach technical problems: researching alternatives, evaluating architectural decisions, and aiming for coherent, well-reasoned solutions, even in seemingly simple contexts."
 			]
 		},
 		infrastructure: {
@@ -65,30 +66,5 @@ export default {
 				]
 			}
 		},
-		gallery: {
-			title: "Gallery",
-			images: [
-				{
-					src: "/images/projects/portfolio.png",
-					alt: "Home page",
-					caption: "Home page with tech-inspired design"
-				},
-				{
-					src: "/images/projects/portfolio.png",
-					alt: "Projects section",
-					caption: "Project list with interactive cards"
-				},
-				{
-					src: "/images/projects/portfolio.png",
-					alt: "About page",
-					caption: "Experience and education timeline"
-				},
-				{
-					src: "/images/projects/portfolio.png",
-					alt: "Responsive design",
-					caption: "Fully responsive design on mobile"
-				}
-			]
-		}
 	}
 };

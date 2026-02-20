@@ -59,7 +59,7 @@
 </script>
 
 <!-- Hero Section -->
-<div class="relative overflow-hidden mb-12">
+<div class="relative overflow-hidden mb-12 py-4">
 	<!-- Background decoration with unique glow effects -->
 	<div class="absolute inset-0 -z-10">
 		<!-- Animated gradient orbs with increased opacity for subtle glow -->
@@ -132,7 +132,7 @@
 
 		<!-- Links with enhanced glass effect -->
 		{#if links.length > 0}
-			<div class="flex flex-wrap gap-4 pb-4">
+			<div class="flex flex-wrap gap-4">
 				{#each links as link}
 					<a
 						href={link.url}

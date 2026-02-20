@@ -19,9 +19,10 @@ export default {
 		motivation: {
 			title: "¿Por qué este proyecto?",
 			paragraphs: [
-				"Después de completar mi carrera en Ingeniería Civil Electrónica y obtener experiencia como desarrollador Full Stack, necesitaba algo sólido que mostrar de mi trabajo de forma profesional. Más allá de simplemente mostrar proyectos, quería demostrar que soy capaz de aprender y aplicar tecnologías modernas de forma organizada y racional.",
-				"Si bien este no es un proyecto de gran escala ni de alto impacto, decidí ir más allá de un simple sitio estático. Implementé una infraestructura completa en AWS con S3, CloudFront y Route 53, configuré pipelines de CI/CD con GitHub Actions, y monté ambientes duales (staging y production) con infraestructura separada. Son tecnologías que estoy aprendiendo activamente y, aunque no tengo amplia experiencia laboral con ellas, quise demostrar que puedo aplicarlas efectivamente.",
-				"Este proyecto refleja mi forma de aprender: práctica, hands-on, y siempre buscando ir un paso más allá de lo mínimo necesario."
+				"Después de completar mi carrera en Ingeniería Electrónica y ganar experiencia como desarrollador Full Stack, quise construir un portafolio que fuera más allá de simplemente mostrar proyectos. Quería que reflejara cómo pienso el software: de manera estructurada, intencional y con enfoque en producción.",
+				"Aunque el sitio es estático, lo diseñé deliberadamente con una arquitectura cloud de nivel productivo. En lugar de utilizar un hosting plug-and-play, implementé una infraestructura completa en AWS utilizando Amazon S3, Amazon CloudFront y Amazon Route 53, junto con pipelines de CI/CD automatizados mediante GitHub Actions. Además, configuré entornos de staging y producción completamente aislados.",
+				"Mi objetivo no fue agregar complejidad innecesaria, sino demostrar comprensión práctica de infraestructura, flujos de despliegue, estrategias de caché y separación de entornos.",
+				"El proyecto también refleja mi forma de abordar los problemas técnicos: investigando alternativas, evaluando decisiones arquitectónicas y buscando soluciones coherentes y bien fundamentadas, incluso en contextos aparentemente simples."
 			]
 		},
 		infrastructure: {
@@ -65,30 +66,5 @@ export default {
 				]
 			}
 		},
-		gallery: {
-			title: "Galería",
-			images: [
-				{
-					src: "/images/projects/portfolio.png",
-					alt: "Página de inicio",
-					caption: "Página de inicio con diseño tech-inspired"
-				},
-				{
-					src: "/images/projects/portfolio.png",
-					alt: "Sección de proyectos",
-					caption: "Lista de proyectos con cards interactivas"
-				},
-				{
-					src: "/images/projects/portfolio.png",
-					alt: "Página about",
-					caption: "Timeline de experiencia y educación"
-				},
-				{
-					src: "/images/projects/portfolio.png",
-					alt: "Diseño responsivo",
-					caption: "Diseño totalmente responsivo en mobile"
-				}
-			]
-		}
 	}
 };
