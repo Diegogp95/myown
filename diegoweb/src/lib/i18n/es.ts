@@ -1,4 +1,5 @@
 import portfolioEs from './projects/portfolio-es';
+import smartsheetEs from './projects/svelte-smartsheet-es';
 
 export default {
 	nav: {
@@ -38,6 +39,7 @@ export default {
 			]
 		},
         aboutButton: 'Más sobre mí',
+        projectsButton: 'Ver mis proyectos',
         contactButton: 'Contáctame',
     },
 	error: {
@@ -185,6 +187,7 @@ earlyLife: {
 		},
 		entries: {
 			portfolio: portfolioEs,
+			'svelte-smartsheet': smartsheetEs,
 		}
 	}
 }
