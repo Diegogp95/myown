@@ -62,6 +62,12 @@
                 variant="secondary"
             />
             <Button
+                href={`/${data.lang}/projects`}
+                text={t.projectsButton}
+                icon="arrow"
+                variant="secondary"
+            />
+            <Button
                 href={`/${data.lang}/contact`}
                 text={t.contactButton}
                 icon="external"
