@@ -41,12 +41,14 @@ export default {
 				title: "CI/CD Pipeline",
 				items: [
 					"Pull Requests trigger automated builds for validation",
-					"Merges to main trigger build + deployment to S3",
-					"Automatic CloudFront cache invalidation after deployment",
-					"Currently identical for staging and production (artifact promotion planned)"
+					"The pipeline generates a static build artifact only once",
+					"Staging deployment uses the artifact produced during the build stage",
+					"Production does not rebuild the project; it promotes the artifact from the staging S3 bucket",
+					"S3 bucket synchronization is used to promote versions between environments",
+					"Automatic CloudFront cache invalidation after each deployment"
 				]
 			},
-			nextSteps: "Next improvements: implement artifact-based promotion from staging to production using S3 sync between buckets, avoiding redundant builds."
+			nextSteps: "Next improvements: artifact versioning and release/tag-based promotion to control which version is deployed to production."
 		},
 		techStack: {
 			title: "Tech Stack",

@@ -41,12 +41,14 @@ export default {
 				title: "Pipeline CI/CD",
 				items: [
 					"Los Pull Requests disparan builds automáticos para validación",
-					"Los merges a main disparan build + deployment a S3",
-					"Invalidación automática del cache de CloudFront después del deployment",
-					"Actualmente idéntico para staging y production (promoción de artefactos planificada)"
-				]
+					"El pipeline genera un artefacto estático del sitio una sola vez",
+					"El deployment a staging utiliza directamente el artefacto generado en el build",
+					"Producción no recompila el proyecto: promueve el artefacto desde el bucket de staging",
+					"Sincronización entre buckets S3 para promover versiones entre ambientes",
+					"Invalidación automática del cache de CloudFront después del deployment"
+				],
 			},
-			nextSteps: "Próximas mejoras: implementar promoción basada en artefactos desde staging a production usando S3 sync entre buckets, evitando builds redundantes."
+			nextSteps: "Próximas mejoras: versionado de artefactos y promoción basada en releases o tags para controlar qué versión pasa a producción."
 		},
 		techStack: {
 			title: "Stack Tecnológico",

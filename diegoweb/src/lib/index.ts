@@ -14,3 +14,4 @@ export { default as Terminal } from './Terminal.svelte';
 export { default as UnderConstruction } from './UnderConstruction.svelte';
 export { default as TimelineItem } from './TimelineItem.svelte';
 export { default as SkillBadge } from './SkillBadge.svelte';
+export { default as Roadmap } from './Roadmap.svelte';
