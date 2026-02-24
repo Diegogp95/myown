@@ -2,7 +2,7 @@ export default {
 	title: "SmartSheet",
 	description: "Una librería de componente tipo hoja de cálculo para Svelte — construida para grillas grandes con virtualización DOM, navegación por teclado, selección múltiple de celdas, edición inline, 5 temas integrados y una API pública completa para estilos, imputación y extracción de datos.",
 	image: "/images/projects/svelte-smartsheet.png",
-	date: "Febrero 2026",
+	date: "Octubre 2025",
 	status: "in-progress" as const,
 	technologies: [
 		{ label: "SvelteKit", variant: "primary" as const },
@@ -46,7 +46,7 @@ export default {
 				title: "API Programática",
 				items: [
 					"API de estilos en celdas y headers — colores de fondo programáticos para construir heatmaps y formato condicional",
-					"Capa de imputación de datos — overlay rayado visual para valores computados o imputados por IA",
+					"Capa de imputación de datos — overlay rayado visual para valores computados o imputados",
 					"APIs de exportación — extrae datos de la grilla, celdas editadas o filas/columnas seleccionadas bajo demanda",
 					"Generics de TypeScript — extraProps completamente tipados por celda para acceso seguro y asistido por IDE en callbacks de API",
 					"API de overlay de procesamiento — muestra estados de carga impulsados por computaciones externas"
@@ -92,13 +92,13 @@ export default {
 			title: "Estado & Roadmap",
 			statusNote: "La librería está en desarrollo temprano activo (v0.0.1-unstable). El conjunto de funcionalidades principales es funcional, pero el código base aún no está suficientemente desacoplado ni testeado para una publicación en npm.",
 			items: [
-				"Página de demo en vivo / playground",
-				"Desacoplar motor y refactorizar en un core framework-agnostic",
-				"Configurar entorno de testing y CI con tests unitarios e de integración",
-				"Publicación en npm (versión estable 1.0.0)",
-				"Redimensionamiento de columnas y filas por arrastre",
-				"Hooks de integración para ordenar/filtrar",
-				"Adaptador para React"
+				{ text: "Página de demo en vivo / playground", done: true },
+				{ text: "Desacoplar motor y refactorizar en un core framework-agnostic", done: false },
+				{ text: "Configurar entorno de testing y CI con tests unitarios e de integración", done: false },
+				{ text: "Publicación en npm (versión estable 1.0.0)", done: false },
+				{ text: "Redimensionamiento de columnas y filas por arrastre", done: false },
+				{ text: "Hooks de integración para ordenar/filtrar", done: false },
+				{ text: "Adaptador para React", done: false }
 			]
 		}
 	}

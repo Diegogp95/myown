@@ -2,7 +2,7 @@ export default {
 	title: "SmartSheet",
 	description: "An Excel-like spreadsheet component library for Svelte — built for large grids with DOM virtualization, keyboard navigation, multi-cell selection, inline editing, 5 built-in themes, and a full public API for styling, imputation, and data extraction.",
 	image: "/images/projects/svelte-smartsheet.png",
-	date: "February 2026",
+	date: "October 2025",
 	status: "in-progress" as const,
 	technologies: [
 		{ label: "SvelteKit", variant: "primary" as const },
@@ -46,7 +46,7 @@ export default {
 				title: "Programmatic API",
 				items: [
 					"Cell & header styling API — set background colors programmatically to build heatmaps and conditional formatting",
-					"Data imputation layer — visual striped overlay for computed or AI-imputed values",
+					"Data imputation layer — visual striped overlay for computed or imputed values",
 					"Export APIs — extract grid data, edited cells, or selected rows/columns on demand",
 					"TypeScript generics — fully typed extraProps per cell for safe, IDE-assisted access inside API callbacks",
 					"Processing overlay API — show loading states driven by external computations"
@@ -92,13 +92,13 @@ export default {
 			title: "Status & Roadmap",
 			statusNote: "The library is in active early development (v0.0.1-unstable). The core feature set is functional, but the codebase is not yet decoupled or tested enough for an npm release.",
 			items: [
-				"Live demo / playground page",
-				"Decouple engine and refactor into a framework-agnostic core",
-				"Set up testing environment and CI with unit and integration tests",
-				"npm publish (stable 1.0.0)",
-				"Column and row resizing by drag",
-				"Sort / filter integration hooks",
-				"React adapter"
+				{ text: "Live demo / playground page", done: true },
+				{ text: "Decouple engine and refactor into a framework-agnostic core", done: false },
+				{ text: "Set up testing environment and CI with unit and integration tests", done: false },
+				{ text: "npm publish (stable 1.0.0)", done: false },
+				{ text: "Column and row resizing by drag", done: false },
+				{ text: "Sort / filter integration hooks", done: false },
+				{ text: "React adapter", done: false }
 			]
 		}
 	}

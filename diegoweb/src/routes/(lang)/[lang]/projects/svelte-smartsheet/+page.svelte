@@ -2,6 +2,7 @@
 	import { languages } from "$lib/i18n";
 	import ProjectHero from "$lib/ProjectHero.svelte";
 	import ProjectSection from "$lib/ProjectSection.svelte";
+	import Roadmap from "$lib/Roadmap.svelte";
 
 	let { data } = $props();
 	const t = languages[data.lang].projects.entries['svelte-smartsheet'];
@@ -131,14 +132,5 @@
 	<div class="bg-electric-purple-500/10 border-l-4 border-electric-purple-400 p-4 rounded-r mb-6">
 		<p class="text-white/70 text-sm">{s.roadmap.statusNote}</p>
 	</div>
-	<ul class="space-y-3">
-		{#each s.roadmap.items as item}
-			<li class="flex items-start gap-3 text-white/80">
-				<span class="w-4 h-4 rounded border border-white/30 mt-0.5 shrink-0 flex items-center justify-center">
-					<span class="w-2 h-2 rounded-sm bg-white/20"></span>
-				</span>
-				<span>{item}</span>
-			</li>
-		{/each}
-	</ul>
+	<Roadmap items={s.roadmap.items} />
 </ProjectSection>
